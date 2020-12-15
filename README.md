@@ -18,7 +18,7 @@ It provides auxiliary functions to solve the problem of Turkish characters when 
 
 ## Requirements
 
-1. PHP >=5.0
+1. PHP >=5.4
 2. PHP mbstring extension have to be loaded.
 
 Other than that, this library has no requirements.
@@ -26,7 +26,7 @@ Other than that, this library has no requirements.
 ## Install
 
 ```bash
-$ composer require x-adam/tr-string:"~1"
+$ composer require x-adam/tr-string:"~2"
 ```
 
 ## Example Usage

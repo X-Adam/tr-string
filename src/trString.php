@@ -10,7 +10,7 @@ if (!function_exists('tr_strtoupper')) {
 if (!function_exists('tr_strtolower')) {
     function tr_strtolower($value)
     {
-        return mb_strtolower(str_replace(array('İ', 'I'), array('i', 'ı'), $value), 'UTF-8');
+        return mb_strtolower(str_replace(['İ', 'I'], ['i', 'ı'], $value), 'UTF-8');
     }
 }
 
