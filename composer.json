@@ -1,0 +1,24 @@
+{
+    "name": "x-adam/tr-string",
+    "description": "It provides auxiliary functions to solve the problem of Turkish characters when converting text to lowercase and uppercase in php.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehmet ÖĞMEN",
+            "email": "www@mehmetogmen.com.tr",
+            "homepage": "https://www.mehmetogmen.com.tr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.0",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "files": [
+            "./src/trString.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
