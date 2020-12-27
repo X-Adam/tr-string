@@ -18,7 +18,8 @@ if (!function_exists('tr_ucfirst')) {
     function tr_ucfirst(string $value): string
     {
         $tmp = preg_split("//u", $value, 2, PREG_SPLIT_NO_EMPTY);
-        return mb_convert_case(tr_strtoupper($tmp[0]), MB_CASE_TITLE, 'UTF-8') . $tmp[1];
+        $more = isset($tmp[1]) ? $tmp[1] : '';
+        return mb_convert_case(tr_strtoupper($tmp[0]), MB_CASE_TITLE, 'UTF-8') . tr_strtolower($more);
     }
 }
 
@@ -26,7 +27,8 @@ if (!function_exists('tr_lcfirst')) {
     function tr_lcfirst(string $value): string
     {
         $tmp = preg_split("//u", $value, 2, PREG_SPLIT_NO_EMPTY);
-        return mb_convert_case(tr_strtolower($tmp[0]), MB_CASE_LOWER, 'UTF-8') . $tmp[1];
+        $more = isset($tmp[1]) ? $tmp[1] : '';
+        return mb_convert_case(tr_strtolower($tmp[0]), MB_CASE_LOWER, 'UTF-8') . $more;
     }
 }
 
